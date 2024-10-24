@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-24T14:41:25.944727" rpa="false" schemaversion="5">
+<suite id="s1" name="ideaSoftTestSuites" source="C:\Users\tayfun.gumusoglu\PycharmProjects\ideaProject\tests\ideaSoftTestSuites.robot">
+<test id="s1-t1" name="1.Control of the number of items in the basket" line="13">
+<kw name="Launch Browser" owner="mainFunctions" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:26.300889" level="INFO">Opening browser 'chrome' to base url 'auto:blank'.</msg>
+<arg>auto:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-24T14:41:26.300666" elapsed="2.596658"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-24T14:41:28.897651" elapsed="0.048069"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:28.946316" level="INFO">Opening url 'https://testcase.myideasoft.com/'</msg>
+<arg>${ideaSoftUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-24T14:41:28.946002" elapsed="1.688500"/>
+</kw>
+<status status="PASS" start="2024-10-24T14:41:26.299851" elapsed="4.334792"/>
+</kw>
+<kw name="Searching for Products with the Search Bar" owner="ideaSoftFacilites">
+<kw name="Wait And Send Text" owner="mainFunctions">
+<kw name="Wait For Element" owner="mainFunctions">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:30.653316" level="INFO">Current page contains element 'xpath=//input[@aria-label='Search']'.</msg>
+<arg>${element}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-10-24T14:41:30.636177" elapsed="0.017236"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${element}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-24T14:41:30.635927" elapsed="0.017568"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:31.254213" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-75.png"&gt;&lt;img src="selenium-screenshot-75.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:30.653642" elapsed="0.600686"/>
+</kw>
+<arg>${element}</arg>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<doc>This method waits for the item in the page source loaded
+P.S : This method doesn't expect to visible.
+Timeout variable is waiting time. Can change with this variable
+Interval variable is recheck interval.</doc>
+<status status="PASS" start="2024-10-24T14:41:30.635680" elapsed="0.618789"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:31.254951" level="INFO">Typing text 'Kalemlik' into text field 'xpath=//input[@aria-label='Search']'.</msg>
+<arg>${element}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T14:41:31.254670" elapsed="0.128900"/>
+</kw>
+<arg>${searchBar}</arg>
+<arg>${productName}</arg>
+<doc>This method is using for filling text inputs and areas</doc>
+<status status="PASS" start="2024-10-24T14:41:30.635421" elapsed="0.748268"/>
+</kw>
+<kw name="Click Search Button" owner="mainFunctions">
+<kw name="Wait And Click Element" owner="mainFunctions">
+<kw name="Wait For Element" owner="mainFunctions">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:31.398399" level="INFO">Current page contains element '//header/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/button[1]/*[1]'.</msg>
+<arg>${element}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-10-24T14:41:31.384801" elapsed="0.013683"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${element}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-24T14:41:31.384581" elapsed="0.013976"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:32.074731" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-76.png"&gt;&lt;img src="selenium-screenshot-76.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:31.398686" elapsed="0.676208"/>
+</kw>
+<arg>${element}</arg>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<doc>This method waits for the item in the page source loaded
+P.S : This method doesn't expect to visible.
+Timeout variable is waiting time. Can change with this variable
+Interval variable is recheck interval.</doc>
+<status status="PASS" start="2024-10-24T14:41:31.384340" elapsed="0.690700"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:32.075581" level="INFO">Clicking element '//header/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/button[1]/*[1]'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T14:41:32.075271" elapsed="0.964160"/>
+</kw>
+<arg>${searchButton}</arg>
+<doc>This method is using for element click action.
+Timeout variable is waiting time. Can change with this variable.
+Interval variable is recheck interval.
+P.S : If element isn't visible. This method should fail.</doc>
+<status status="PASS" start="2024-10-24T14:41:31.384105" elapsed="1.655594"/>
+</kw>
+<status status="PASS" start="2024-10-24T14:41:31.383863" elapsed="1.656041"/>
+</kw>
+<status status="PASS" start="2024-10-24T14:41:30.635124" elapsed="2.404850"/>
+</kw>
+<kw name="Product Selected" owner="ideaSoftFacilites">
+<kw name="Wait And Click Element" owner="mainFunctions">
+<kw name="Wait For Element" owner="mainFunctions">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:33.067597" level="INFO">Current page contains element '//a[contains(text(),'Kalemlik')]'.</msg>
+<arg>${element}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-10-24T14:41:33.045621" elapsed="0.022196"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${element}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-24T14:41:33.044646" elapsed="0.023372"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:33.206495" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-77.png"&gt;&lt;img src="selenium-screenshot-77.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:33.068364" elapsed="0.138417"/>
+</kw>
+<arg>${element}</arg>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<doc>This method waits for the item in the page source loaded
+P.S : This method doesn't expect to visible.
+Timeout variable is waiting time. Can change with this variable
+Interval variable is recheck interval.</doc>
+<status status="PASS" start="2024-10-24T14:41:33.043053" elapsed="0.164014"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:33.207855" level="INFO">Clicking element '//a[contains(text(),'Kalemlik')]'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T14:41:33.207423" elapsed="1.220764"/>
+</kw>
+<arg>${product}</arg>
+<doc>This method is using for element click action.
+Timeout variable is waiting time. Can change with this variable.
+Interval variable is recheck interval.
+P.S : If element isn't visible. This method should fail.</doc>
+<status status="PASS" start="2024-10-24T14:41:33.042035" elapsed="1.386402"/>
+</kw>
+<status status="PASS" start="2024-10-24T14:41:33.040915" elapsed="1.387662"/>
+</kw>
+<kw name="Go to Product Detail and Create Order" owner="ideaSoftFacilites">
+<kw name="Select From List By Index" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:34.429838" level="INFO">Selecting options from selection list '//select[@id='qty-input']' by index 4.</msg>
+<arg>${productQuantity}</arg>
+<arg>4</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2024-10-24T14:41:34.429560" elapsed="0.209669"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-24T14:41:35.640173" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-24T14:41:34.639525" elapsed="1.000982"/>
+</kw>
+<kw name="Wait And Click Element" owner="mainFunctions">
+<kw name="Wait For Element" owner="mainFunctions">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:35.669442" level="INFO">Current page contains element 'xpath=//a[@class='add-to-cart-button']'.</msg>
+<arg>${element}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-10-24T14:41:35.643824" elapsed="0.025844"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${element}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-24T14:41:35.643417" elapsed="0.026478"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:35.926700" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-78.png"&gt;&lt;img src="selenium-screenshot-78.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:35.670277" elapsed="0.256618"/>
+</kw>
+<arg>${element}</arg>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<doc>This method waits for the item in the page source loaded
+P.S : This method doesn't expect to visible.
+Timeout variable is waiting time. Can change with this variable
+Interval variable is recheck interval.</doc>
+<status status="PASS" start="2024-10-24T14:41:35.642420" elapsed="0.284708"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:35.927965" level="INFO">Clicking element 'xpath=//a[@class='add-to-cart-button']'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T14:41:35.927496" elapsed="0.125731"/>
+</kw>
+<arg>${addToCartButton}</arg>
+<doc>This method is using for element click action.
+Timeout variable is waiting time. Can change with this variable.
+Interval variable is recheck interval.
+P.S : If element isn't visible. This method should fail.</doc>
+<status status="PASS" start="2024-10-24T14:41:35.641193" elapsed="0.412246"/>
+</kw>
+<kw name="Check Element Text" owner="mainFunctions">
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:36.369588" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-79.png"&gt;&lt;img src="selenium-screenshot-79.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:36.054922" elapsed="0.314903"/>
+</kw>
+<kw name="Wait For Element" owner="mainFunctions">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:36.701367" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-80.png"&gt;&lt;img src="selenium-screenshot-80.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-24T14:41:36.701898" level="FAIL">Page should have contained element '//body/div[6]/div[1]' but did not.</msg>
+<arg>${element}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2024-10-24T14:41:36.371985" elapsed="0.341599">Page should have contained element '//body/div[6]/div[1]' but did not.</status>
+</kw>
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:37.243798" level="INFO">Current page contains element '//body/div[6]/div[1]'.</msg>
+<arg>${element}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-10-24T14:41:37.214569" elapsed="0.029546"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${element}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-24T14:41:36.370985" elapsed="0.873454"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:37.531310" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-81.png"&gt;&lt;img src="selenium-screenshot-81.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:37.245312" elapsed="0.286336"/>
+</kw>
+<arg>${element}</arg>
+<arg>${timeout}</arg>
+<doc>This method waits for the item in the page source loaded
+P.S : This method doesn't expect to visible.
+Timeout variable is waiting time. Can change with this variable
+Interval variable is recheck interval.</doc>
+<status status="PASS" start="2024-10-24T14:41:36.370234" elapsed="1.161724"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-10-24T14:41:37.533243" level="INFO">${expectedText} = SEPETİNİZE EKLENMİŞTİR</msg>
+<var>${expectedText}</var>
+<arg>${expectedText}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-10-24T14:41:37.532432" elapsed="0.000926"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Element Text Should Be" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:37.534578" level="INFO">Verifying element '//body/div[6]/div[1]' contains exact text 'SEPETİNİZE EKLENMİŞTİR'.</msg>
+<arg>${element}</arg>
+<arg>${expectedText}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-10-24T14:41:37.534034" elapsed="0.046176"/>
+</kw>
+<msg time="2024-10-24T14:41:37.580521" level="INFO">${status} = PASS</msg>
+<msg time="2024-10-24T14:41:37.580620" level="INFO">${value} = None</msg>
+<var>${status}</var>
+<var>${value}</var>
+<arg>Element Text Should Be</arg>
+<arg>${element}</arg>
+<arg>${expectedText}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-10-24T14:41:37.533691" elapsed="0.047003"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n${checkMessage} Success</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-24T14:41:37.581698" elapsed="0.000784"/>
+</kw>
+<arg>'${status}'=='PASS'</arg>
+<arg>log to console</arg>
+<arg>\n${checkMessage} Success</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>\nERROR-${checkMessage}-ERROR</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-10-24T14:41:37.581025" elapsed="0.001734"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:37.826184" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-82.png"&gt;&lt;img src="selenium-screenshot-82.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:37.583462" elapsed="0.242825"/>
+</kw>
+<arg>${addedToYourCartMessage}</arg>
+<arg>SEPETİNİZE EKLENMİŞTİR</arg>
+<arg>Adding the product to the cart was.</arg>
+<doc>This method checks the text inside the element, if false, test case fails</doc>
+<status status="PASS" start="2024-10-24T14:41:36.053820" elapsed="1.772561"/>
+</kw>
+<status status="PASS" start="2024-10-24T14:41:34.429125" elapsed="3.397318"/>
+</kw>
+<kw name="Open Cart Page" owner="ideaSoftFacilites">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-24T14:41:39.827863" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-24T14:41:37.827038" elapsed="2.001102"/>
+</kw>
+<kw name="Wait And Click Element" owner="mainFunctions">
+<kw name="Wait For Element" owner="mainFunctions">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:39.857504" level="INFO">Current page contains element '//span[contains(text(),'Sepet')]'.</msg>
+<arg>${element}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-10-24T14:41:39.831447" elapsed="0.026247"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${element}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-24T14:41:39.830767" elapsed="0.027108"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:40.092014" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-83.png"&gt;&lt;img src="selenium-screenshot-83.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:39.858196" elapsed="0.234010"/>
+</kw>
+<arg>${element}</arg>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<doc>This method waits for the item in the page source loaded
+P.S : This method doesn't expect to visible.
+Timeout variable is waiting time. Can change with this variable
+Interval variable is recheck interval.</doc>
+<status status="PASS" start="2024-10-24T14:41:39.829848" elapsed="0.262538"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:40.092992" level="INFO">Clicking element '//span[contains(text(),'Sepet')]'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T14:41:40.092660" elapsed="0.709240"/>
+</kw>
+<arg>${cartPage}</arg>
+<doc>This method is using for element click action.
+Timeout variable is waiting time. Can change with this variable.
+Interval variable is recheck interval.
+P.S : If element isn't visible. This method should fail.</doc>
+<status status="PASS" start="2024-10-24T14:41:39.828703" elapsed="0.973431"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-24T14:41:41.803381" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-24T14:41:40.802443" elapsed="1.001181"/>
+</kw>
+<kw name="Check Element Text" owner="mainFunctions">
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:41.950752" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-84.png"&gt;&lt;img src="selenium-screenshot-84.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:41.804810" elapsed="0.146131"/>
+</kw>
+<kw name="Wait For Element" owner="mainFunctions">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:41.967488" level="INFO">Current page contains element '//a[contains(text(),'Kalemlik')]'.</msg>
+<arg>${element}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-10-24T14:41:41.952521" elapsed="0.015110"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${element}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-24T14:41:41.951964" elapsed="0.015809"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:42.113686" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-85.png"&gt;&lt;img src="selenium-screenshot-85.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:41.968021" elapsed="0.145757"/>
+</kw>
+<arg>${element}</arg>
+<arg>${timeout}</arg>
+<doc>This method waits for the item in the page source loaded
+P.S : This method doesn't expect to visible.
+Timeout variable is waiting time. Can change with this variable
+Interval variable is recheck interval.</doc>
+<status status="PASS" start="2024-10-24T14:41:41.951302" elapsed="0.162562"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-10-24T14:41:42.114225" level="INFO">${expectedText} = Kalemlik</msg>
+<var>${expectedText}</var>
+<arg>${expectedText}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.114001" elapsed="0.000251"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Element Text Should Be" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:42.114722" level="INFO">Verifying element '//a[contains(text(),'Kalemlik')]' contains exact text 'Kalemlik'.</msg>
+<arg>${element}</arg>
+<arg>${expectedText}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.114529" elapsed="0.019812"/>
+</kw>
+<msg time="2024-10-24T14:41:42.134551" level="INFO">${status} = PASS</msg>
+<msg time="2024-10-24T14:41:42.134615" level="INFO">${value} = None</msg>
+<var>${status}</var>
+<var>${value}</var>
+<arg>Element Text Should Be</arg>
+<arg>${element}</arg>
+<arg>${expectedText}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.114379" elapsed="0.020270"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n${checkMessage} Success</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.135230" elapsed="0.001139"/>
+</kw>
+<arg>'${status}'=='PASS'</arg>
+<arg>log to console</arg>
+<arg>\n${checkMessage} Success</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>\nERROR-${checkMessage}-ERROR</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.134861" elapsed="0.001645"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:42.271455" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-86.png"&gt;&lt;img src="selenium-screenshot-86.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.136707" elapsed="0.134911"/>
+</kw>
+<arg>${product}</arg>
+<arg>Kalemlik</arg>
+<arg>Checking items in the cart</arg>
+<doc>This method checks the text inside the element, if false, test case fails</doc>
+<status status="PASS" start="2024-10-24T14:41:41.804102" elapsed="0.467796"/>
+</kw>
+<kw name="Check Input Text" owner="mainFunctions">
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:42.411528" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-87.png"&gt;&lt;img src="selenium-screenshot-87.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.272818" elapsed="0.138851"/>
+</kw>
+<kw name="Wait For Element" owner="mainFunctions">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:42.430602" level="INFO">Current page contains element '//input[@value='5']'.</msg>
+<arg>${element}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.413092" elapsed="0.017624"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>${interval}</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${element}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.412504" elapsed="0.018322"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:42.566341" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-88.png"&gt;&lt;img src="selenium-screenshot-88.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.431036" elapsed="0.135551"/>
+</kw>
+<arg>${element}</arg>
+<arg>${timeout}</arg>
+<doc>This method waits for the item in the page source loaded
+P.S : This method doesn't expect to visible.
+Timeout variable is waiting time. Can change with this variable
+Interval variable is recheck interval.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.411937" elapsed="0.154868"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-10-24T14:41:42.567484" level="INFO">${expectedText} = 5</msg>
+<var>${expectedText}</var>
+<arg>${expectedText}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.567075" elapsed="0.000468"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Textfield Value Should Be" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:42.607660" level="INFO">Content of text field '//input[@value='5']' is '5'.</msg>
+<arg>${element}</arg>
+<arg>${expectedText}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.568289" elapsed="0.039492"/>
+</kw>
+<msg time="2024-10-24T14:41:42.607979" level="INFO">${status} = PASS</msg>
+<msg time="2024-10-24T14:41:42.608045" level="INFO">${value} = None</msg>
+<var>${status}</var>
+<var>${value}</var>
+<arg>Textfield Value Should Be</arg>
+<arg>${element}</arg>
+<arg>${expectedText}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.567917" elapsed="0.040163"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n${checkMessage} Success</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.608622" elapsed="0.000474"/>
+</kw>
+<arg>'${status}'=='PASS'</arg>
+<arg>log to console</arg>
+<arg>\n${checkMessage} Success</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>\nERROR-${checkMessage}-ERROR</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.608292" elapsed="0.000936"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="Selenium2Library">
+<msg time="2024-10-24T14:41:42.744574" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-89.png"&gt;&lt;img src="selenium-screenshot-89.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.609423" elapsed="0.135297"/>
+</kw>
+<arg>${checkCartPageProductQuantity}</arg>
+<arg>5</arg>
+<arg>The number of items in your cart has been verified.</arg>
+<doc>This method checks the text inside the element, if false, test case fails</doc>
+<status status="PASS" start="2024-10-24T14:41:42.272244" elapsed="0.472620"/>
+</kw>
+<status status="PASS" start="2024-10-24T14:41:37.826806" elapsed="4.918198"/>
+</kw>
+<kw name="When Test Fail Take Screenshot" owner="mainFunctions" type="TEARDOWN">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.746396" elapsed="0.000150"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Close Browser</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.746724" elapsed="0.000127"/>
+</kw>
+<kw name="Run Keyword If Test Passed" owner="BuiltIn">
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.747247" elapsed="2.560135"/>
+</kw>
+<arg>Close Browser</arg>
+<doc>Runs the given keyword with the given arguments, if the test passed.</doc>
+<status status="PASS" start="2024-10-24T14:41:42.747035" elapsed="2.560491"/>
+</kw>
+<doc>This method takes a screenshot and closes the browser if the test case fail</doc>
+<status status="PASS" start="2024-10-24T14:41:42.745953" elapsed="2.561684"/>
+</kw>
+<status status="PASS" start="2024-10-24T14:41:26.298981" elapsed="19.009182"/>
+</test>
+<kw name="Close All Browsers" owner="Selenium2Library" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-10-24T14:41:45.309726" elapsed="0.000302"/>
+</kw>
+<status status="PASS" start="2024-10-24T14:41:25.947963" elapsed="19.362176"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ideaSoftTestSuites">ideaSoftTestSuites</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
